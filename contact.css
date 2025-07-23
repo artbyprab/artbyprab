@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 0px;
+  background-color: rgb(253, 249, 249);
+  font-family: 'Ribeye', serif;
+}
+
+header {
+  display: flex;
+  background-image: url(./PAssests/head3.jpg);
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: x-large;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#left {
+  font-size: 45px;
+  color: aliceblue;
+  text-shadow:
+    -2px 0 black, 2px 0 black,
+    0 -2px black, 0 2px black,
+    -2px -2px black, 2px -2px black,
+    -2px 2px black, 2px 2px black;
+}
+
+#right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#right a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#right a:hover {
+  color: #ffd700;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #0077aa;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    font-size: large;
+  }
+
+  #left {
+    font-size: 30px;
+    text-align: center;
+  }
+
+ 
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #right {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+#main {
+  font-weight: bolder;
+  color: maroon;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.footer {
+  height: 150px;
+  background-color: #cb5f8c;
+  color: #eee;
+  padding: 20px;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+}
+
+footer a {
+  display: inline-block;
+  font-size: x-large;
+  margin-left: 5px;}
+
+  .form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 2rem;
+  text-align: center;
+  color: #4a1e1e;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #4a1e1e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #652e2e;
+}
